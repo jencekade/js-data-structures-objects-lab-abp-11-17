@@ -1,19 +1,17 @@
 // Write your solution in this file!
-var driver = {
-  name: 'Sam',
-  address: '11 Broadway'
-}
+let driver = {};
 
 function updateDriverWithKeyAndValue(driver,key,value) {
-  return Object.assign({}, driver, { [key]: value });
+  let newDriver = Object.assign({}, driver, { [key]: value });
+  return newDriver;
 }
 
 function destructivelyUpdateDriverWithKeyAndValue(driver, key, value) {
-  driver[key]=value;
+  driver[key] = value;
   return driver;
 }
 
-function deleteFromDriverByKey(driver, key) {
+/*function deleteFromDriverByKey(driver, key) {
   //const newObj = Object.assign({}, driver);
   //return newObj;
 }
@@ -21,3 +19,4 @@ function deleteFromDriverByKey(driver, key) {
 destructivelyDeleteFromdriverByKey(driver, key) {
 
 }
+*/
